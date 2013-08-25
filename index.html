@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+	<head>
+		<title>slider</title>
+		<link rel="stylesheet" href="site.css"/>
+		<script src="js/jquery-1.8.3.js"></script>
+		<script src="site.js"></script>
+	</head>
+	<body>
+		<h1>Slider</h1>
+		<div class="pageCont">
+			<ul id="fSlider">
+				<li>
+					<img src="slide1.jpg" alt="" width="500"/>
+				</li>
+				<li>
+					<img src="slide2.jpg" alt="" width="500"/>
+				</li>
+				<li>
+					<img src="slide3.jpg" alt="" width="500"/>
+				</li>
+				<li>
+					<img src="slide2.jpg" alt="" width="500"/>
+				</li>
+			</ul>
+
+			<ul id="mySlider">
+				<li>
+					<img src="slide1.jpg" alt="" width="500"/>
+				</li>
+				<li>
+					<img src="slide2.jpg" alt="" width="500"/>
+				</li>
+				<li>
+					<img src="slide3.jpg" alt="" width="500"/>
+				</li>
+			</ul>
+			<script>
+			$(function(){
+				$('#mySlider').mySlider(500, 3);
+				$('#fSlider').mySlider(500, 4);
+			});
+			</script>
+		</div>
+	</body>
+</html>

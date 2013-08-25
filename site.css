@@ -1,0 +1,63 @@
+.pageCont{
+	width: 800px;
+	margin: auto;
+	margin-bottom: 100px;
+}
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+
+
+.mainSliderCont{
+	width: 500px;
+	margin: 0 auto;
+	position: relative;
+}
+.sliderContainer{
+	width: 500px;
+	overflow: hidden;
+	position: relative;
+
+}
+	.sliderContainer .slidesContainer{
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		width: 1500px;
+		margin-left: 0;
+		position: relative;
+		height: 375px;
+
+	}
+		.sliderContainer .slidesContainer .slide{
+			position: absolute;
+			height: 375px;
+		}
+			.sliderContainer .slidesContainer .slide img{
+				display: block;
+			}
+.controls{
+	position: absolute;
+	width: 560px;
+	left: -30px;
+	top: 50%;
+	margin-top: -15px;
+}
+	.controls .control{
+		width: 30px;
+		height: 30px;
+		background: green;
+		position: absolute;
+		cursor: pointer;
+	}
+		.controls .control.nextSlide{
+			right: 0;
+		}
+		.controls .control.prevSlide{
+			left: 0;
+		}
